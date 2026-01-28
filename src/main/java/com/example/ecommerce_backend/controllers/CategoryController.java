@@ -30,13 +30,13 @@ public class CategoryController {
         return categoryRepository.findAll();
     }
 
-    @GetMapping("/category{id}")
+    @GetMapping("/category/{id}")
     public Category singleCategory(@PathVariable Long id)
     {
         return categoryRepository.findById(id).orElse(null);
     }
 
-    @DeleteMapping("/category")
+    @DeleteMapping("/category/{id}")
     public ResponseEntity<?> deleteCategory(@PathVariable Long id)
     {
         categoryRepository.deleteById(id);

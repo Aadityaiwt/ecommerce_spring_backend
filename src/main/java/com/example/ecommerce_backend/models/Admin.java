@@ -12,7 +12,6 @@ public class Admin {
     private String username;
     private String password;
 
-
     public Long getId() {
         return id;
     }
@@ -26,7 +25,7 @@ public class Admin {
     }
 
     public void setUsername(String username) {
-        username = username;
+        this.username = username;
     }
 
     public String getPassword() {
@@ -34,6 +33,6 @@ public class Admin {
     }
 
     public void setPassword(String password) {
-        password = password;
+        this.password = password;
     }
 }
